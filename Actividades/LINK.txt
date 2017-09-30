@@ -1,0 +1,2 @@
+https://msdn.microsoft.com/es-es/library/ff679977(v=vs.94).aspx (indexOf)
+https://github.com/Theasker/daw_javascript/blob/master/DWEC02/tarea_dwec02.html
