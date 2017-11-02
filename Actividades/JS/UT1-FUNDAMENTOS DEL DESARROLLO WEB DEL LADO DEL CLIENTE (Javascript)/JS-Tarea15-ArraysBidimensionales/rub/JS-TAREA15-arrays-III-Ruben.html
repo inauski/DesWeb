@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays III</title>
+</head>
+<body>
+	<button onClick="ejercicio1()">Ejercicio 1</button>
+	<button onClick="ejercicio2()">Ejercicio 2</button>
+	<button onClick="ejercicio3()">Ejercicio 3</button>
+	<br>
+	<p id="contenido"></p>
+	<script>
+		function ejercicio1(){
+			var matriz = [[1,2,3,4],[5,6],[7,8,9,10,11,12],[13]];
+			document.getElementById("contenido").innerHTML = matriz + "<br><br>";
+			for(i=0; i < matriz.length; i++)
+				document.getElementById("contenido").innerHTML += "---" + matriz[i].join("---") + "<br>";
+		}
+		function crearTablaHTML(tabla){
+			var codHTML = "<table>";
+			for(i = 0; i < tabla.length; i++){
+				codHTML += "<tr>";
+				for(j = 0; j < tabla[i].length; j++)
+					codHTML += "<td>" + tabla[i][j] + "</td>";
+				codHTML += "</tr>";
+			}
+			codHTML += "</table>";
+			return codHTML;
+		}
+		function ejercicio2(){
+			var zonaVentas = [["Zona","Ventas"]
+							,["Zona 1","333.882€"]
+							,["Zona 2","217.771€"]
+							,["Zona 3","190.597€"]
+							,["Zona 4","332.254€"]
+							,["Zona 5","178.135€"]
+							,["Zona 6","116.550€"]
+							,["Zona 7","261.152€"]
+							,["Zona 8","269.797€"]
+							,["Zona 9","339.795€"]
+							,["Zona 10","300.075€"]];
+			document.getElementById("contenido").innerHTML = crearTablaHTML(zonaVentas);
+		}
+		function ejercicio3(){	
+			nFilas = NaN;	
+			while(isNaN(nFilas))
+				nFilas = parseInt(prompt("Introduce número de filas: "));
+			nColumnas = NaN;	
+			while(isNaN(nColumnas))
+				nColumnas = parseInt(prompt("Introduce número de columnas: "));
+			for(i = 0; i < nFilas; i++)
+				for(j = 0; j < nColumnas; j++)
+					
+		}
+	</script>
+</body>
+</html>

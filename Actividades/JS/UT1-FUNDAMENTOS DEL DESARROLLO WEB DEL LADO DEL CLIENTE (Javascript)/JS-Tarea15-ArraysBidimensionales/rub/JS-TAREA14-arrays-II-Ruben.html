@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays II</title>
+</head>
+<body>
+	<center>
+		<h1>Manejando Array's...</h1>
+		<br>
+		<label for="txtDatos"><b>Introduce un texto:</b></label>
+		<br>
+		<br>
+		<textarea id="txtDatos" style="min-width:250px;max-width:20px"></textarea>
+		<br>
+		<br>
+		<button id="btnPulsame" onClick="analizarTexto()">Púlsame</button>
+	</center>
+	<script>
+		function analizarTexto(){
+			var texto = document.getElementById("txtDatos").value;
+			var palabras = texto.split(" ");
+			if(palabras.length < 1 || palabras[0]==""){
+				alert("Por favor, introduzca un texto.")
+				return;
+			}
+			var reves = palabras; reves.reverse;
+			var ordenado = palabras; ordenado.sort;
+			var ordReves = ordenado; ordReves.reverse;
+			var resultado = "<h2>Información sobre el texto introducido...:</h2>" +
+						"<p>Número de palabras: <b>"+ palabras.length +
+						"</b></p><p>Primera palabra: <b>" + palabras[0] +
+						"</b></p><p>Última palabra: <b>" + palabras[palabras.length-1] +
+						"</b></p><p>Colocadas al revés: <br><b>" + palabras.reverse() +
+						"</b></p><p>Ordenadas de la 'a' a la 'z': <br><b>" + palabras.sort() +
+						"</b></p><p>Ordenadas de la 'z' a la 'a': <br><b>" + palabras.sort().reverse() +
+						"<br></p><p>...Hecho</b></p>";
+			var popup = window.open("", "", "width=600,height=400");
+			popup.document.title = "Array's";
+			popup.document.write("<center>" + resultado + "</center>");
+		}
+	</script>
+</body>
+</html>

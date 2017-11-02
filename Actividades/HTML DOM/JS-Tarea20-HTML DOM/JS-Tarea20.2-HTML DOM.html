@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="res1"></p>
+<p id="res2"></p>
+<p id="res3"></p>
+<p id="res4"></p>
+
+<p><strong>Marte</strong> es el cuarto <a href="http://es.wikipedia.org/wiki/Planeta" title="Planeta">planeta</a> del <a href="http://es.wikipedia.org/wiki/Sistema_Solar" title="Sistema Solar">Sistema Solar</a> más cercano al Sol. Llamado así por el dios de la guerra de la mitología romana <a href="http://es.wikipedia.org/wiki/Marte_(mitolog%C3%ADa)" title="Marte (mitología)">Marte</a>, recibe a veces el apodo de <em>Planeta rojo</em> debido a la apariencia rojiza que le confiere el <a href="http://es.wikipedia.org/wiki/%C3%93xidos_de_hierro" title="Óxidos de hierro">óxido de hierro</a> que domina su superficie. Tiene una <a href="http://es.wikipedia.org/wiki/Atm%C3%B3sfera" title="Atmósfera">atmósfera</a> delgada formada por dióxido de carbono, y dos satélites: <a href="http://es.wikipedia.org/wiki/Fobos_(sat%C3%A9lite)" title="Fobos (satélite)">Fobos</a> y <a href="http://es.wikipedia.org/wiki/Deimos_(sat%C3%A9lite)" title="Deimos (satélite)">Deimos</a>. Forma parte de los llamados <a href="http://es.wikipedia.org/wiki/Planeta_terrestre" title="Planeta terrestre">planetas telúricos</a> (de naturaleza rocosa, como la <a href="http://es.wikipedia.org/wiki/Tierra" title="Tierra">Tierra</a>) y es el <a href="http://es.wikipedia.org/wiki/Planeta_interior" title="Planeta interior">planeta interior</a> más alejado del <a href="http://es.wikipedia.org/wiki/Sol" title="Sol">Sol</a>. Es, en muchos aspectos, el más parecido a la Tierra.</p>
+<p id="p2">Aunque en apariencia podría parecer un planeta muerto, no lo es. Sus campos de dunas siguen siendo mecidos por el viento marciano, sus casquetes polares cambian con las estaciones e incluso parece que hay algunos pequeños flujos estacionales de agua</p>
+<p name="p3"><a href="http://es.wikipedia.org/wiki/Tycho_Brahe" title="Tycho Brahe">Tycho Brahe</a> midió con gran precisión el movimiento de Marte en el cielo. Los datos sobre el movimiento retrógrado aparente (los llamados &quot;lazos&quot;)<a href="http://es.wikipedia.org/wiki/Marte_(planeta)#cite_note-4"> nota 1</a> permitieron a <a href="http://es.wikipedia.org/wiki/Johannes_Kepler" title="Johannes Kepler">Kepler</a> hallar la naturaleza elíptica de su órbita y determinar las leyes del movimiento planetario conocidas como<a href="http://es.wikipedia.org/wiki/Leyes_de_Kepler" title="Leyes de Kepler"> leyes de Kepler</a>.</p>
+
+<h1>Selecciona y pulsa botón</h1>
+
+<form>
+	<select id="opcion">
+	  <option>Haz la selección</option>
+	  <option>Arriba</option>
+	  <option>Abajo</option>
+	</select>
+</form>
+
+<br>
+<br>
+
+<button type="button" onclick="myFunction1()">Mostrar Resultados</button>
+
+
+<p id="res5"></p>
+<p id="res6"></p>
+<p id="res7"></p>
+<p id="res8"></p>
+
+<script>
+	function myFunction1() {
+		var resultado1 = "Número de links: " + document.getElementsByTagName("a").length;
+		var resultado2 = "El penúltimo enlace apunta a: " + document.getElementsByTagName("a")[document.getElementsByTagName("a").length - 2];
+		var enlace = "http://es.wikipedia.org/wiki/Tycho_Brahe";
+		var cont = 0; 
+		for (i = 0; i < document.getElementsByTagName("a").length - 1; i++) {
+				if(enlace == document.getElementsByTagName("a")[i]) {
+					cont++;
+				}
+			}
+		var resultado3 = "El número de enlaces que apuntan a " + enlace + " es: " + cont;
+		var resultado4 = "Número de enlaces del tercer párrafo = " + document.getElementsByTagName("p")[6].getElementsByTagName("a").length;
+
+		if (document.getElementById("opcion").value == "Arriba"){
+			document.getElementById("res1").innerHTML = resultado1;
+			document.getElementById("res2").innerHTML = resultado2;
+			document.getElementById("res3").innerHTML = resultado3;
+			document.getElementById("res4").innerHTML = resultado4;
+	
+			for (i = 7; i <= 10; i++) {
+				document.getElementsByTagName("p")[i].innerHTML = "";
+			}
+		}
+		else if (document.getElementById("opcion").value == "Abajo") {
+			document.getElementById("res5").innerHTML = resultado1;
+			document.getElementById("res6").innerHTML = resultado2;
+			document.getElementById("res7").innerHTML = resultado3;
+			document.getElementById("res8").innerHTML = resultado4;
+			for (i = 0; i <= 3; i++) {
+				document.getElementsByTagName("p")[i].innerHTML = "";
+			}
+		}
+		else{
+			alert("Selecciona una respuesta válida")
+		}
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS-TAREA22</title>
+	
+	<style>
+	
+
+	@-webkit-keyframes mymove {
+	    from {top: 0px;}
+	    to {top: 200px;}
+	}
+
+	@keyframes mymove {
+	    from {top: 0px;}
+	    to {top: 200px;}
+	}
+	
+	</style>
+
+	<script>
+
+	var x = document.getElementById("myDiv");
+
+	function balon(){
+		x.style.WebkitAnimation= "mymove 4s 2";
+	}
+
+	x.addEventListener("webkitAnimationStart",empieza);
+	x.addEventListener("animationend", acaba);
+
+	function empieza(){
+		this.innerHTML="Empieza la animacion";
+	}
+
+	function acaba(){
+		this.innerHTML = "Acabado";
+	}
+
+</script>
+</head>
+<body>
+	<div id="myDiv" onclick="balon()">
+		<img src="img/balon.jpg">
+	<div>
+
+
+</body>
+
+</html>
+
+
+

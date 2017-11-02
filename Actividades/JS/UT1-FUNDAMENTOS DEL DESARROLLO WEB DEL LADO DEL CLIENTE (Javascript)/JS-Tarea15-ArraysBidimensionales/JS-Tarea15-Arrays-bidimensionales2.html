@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSTarea15</title>
+</head>
+<body>
+
+<p id="tabla"></p>
+<p id="tabla2"></p>
+
+<script>
+
+
+function crearTabla(tabla){
+	string="<table>";
+	for(i=0;i<tabla.length;i++){
+		string +="<tr>";
+		for(j=0;j<tabla[i].length;j++){
+			string +="<td>"
+			string+=tabla[i][j];
+			string +="</td>"
+		}
+	string +="</tr>";
+}
+string +="</table>";
+return string;
+}
+
+ var tabla = [["Zona","Ventas"],
+ 			 ["Zona1","333.882"],
+ 			 ["Zona2","217.771"],
+ 			 ["Zona3","190.597"],
+ 			 ["Zona4","332.254"],
+ 			 ["Zona5","178.135"],
+ 			 ["Zona6","116.550"],
+ 			 ["Zona7","261.152"],
+ 			 ["Zona8","269.797"],
+ 			 ["Zona9","339.795"],
+ 			 ["Zona10","300.075"]];
+
+ document.getElementById("tabla").innerHTML = crearTabla(tabla); 
+</script>
+
+<script>
+	
+		var filas = parseInt(prompt("Ingrese cantidad de filas--> "));
+		var col = parseInt(prompt("Ingrese cantidad de columnas--> "));
+		var lista = [];
+					
+		for(var i = 0; i < filas; i++){
+			lista[i] = [];
+		}
+					
+		for(var i = 0; i < filas; i++){
+			for(var j = 0; j < col; j++){
+				lista[i][j] = prompt("Escribe el contenido de la posición | " + i + " | " + j + " |");
+			}
+		}
+	document.getElementById("tabla2").innerHTML= crearTabla(lista);
+			
+</script>
+<script>
+//RUBEN
+		/*
+	filas = NaN;	
+	while(isNumber(filas))
+		filas = parseInt(prompt("Introduce número de filas: "));
+	col = NaN;	
+	while(isNaN(col))
+		col = parseInt(prompt("Introduce número de columnas: "));
+	filas++;
+	tabla[filas];
+	var fil=[col];
+	for(i = 0; i < col; i++)
+		fil[i]= prompt("Introduce nombre de col" + (i+1)+ ":");
+		for(j = 0; j < filas; j++){
+			tabla [i][j];
+	}}	
+	 document.getElementById("tabla2").innerHTML = crearTabla(tabla);	*/
+</script>
+
+</body>
+</html>

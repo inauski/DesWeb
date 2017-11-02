@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tarea16 - Arrays asociativos</title>
+		<style>
+			table{
+				position: absolute;
+   				left: 50%;
+   			 	top: 50%;
+   				transform: translate(-50%, -50%);
+   				-webkit-transform: translate(-50%, -50%);
+				width:200px;
+				visibility:hidden;
+			}
+			table, th, td {
+				border: 2px solid black;
+				border-collapse: collapse;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body style="text-align:center">
+		<h1>Arrays asociativos</h1><br>
+		<button onclick="funcion1();">Púlsame para crear un array asociativo</button>
+		<button onclick="funcion2();">Púlsame para ver un array asociativo bidimensional</button>
+		<button onclick="funcion3();">Púlsame para crear un array asociativo bidimensional</button>
+		<table id="tabla">
+			<tbody id="tbody">
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Edad</th>
+				</tr>
+			</tbody>
+		</table>
+		<table id="tabla2">
+			<tbody id="tbody2">
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Edad</th>
+				</tr>
+			</tbody>
+		</table>
+		<table id="tabla3">
+			<tbody id="tbody3">
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Edad</th>
+				</tr>
+			</tbody>
+		</table>
+		<script>
+			function funcion1(){
+				var lista = [];
+				alert("Rellena los datos del alumno");
+					var nombre = prompt("Indice 'nombre': ");
+					lista["nombre"] = nombre;
+					var apellido = prompt("Indice 'apellido': ");
+					lista["apellido"] = apellido;
+					var edad = prompt("Indice 'edad': ");
+					lista["edad"] = parseInt(edad);
+
+					document.getElementById("tbody").innerHTML += "<tr><td>" + lista["nombre"] + "</td><td>" + lista["apellido"] + "</td><td>" + lista["edad"] + "</td></tr>";
+					document.getElementById("tabla").style.visibility = "visible";
+					document.getElementById("tabla2").style.visibility = "hidden";
+					document.getElementById("tabla3").style.visibility = "hidden";
+			}
+
+			function funcion2(){
+				var lista = [{nombre:"Asier", apellido:"Alfaro", edad:20}, {nombre:"Ruben", apellido:"Lopez", edad:21}, {nombre:"Pello", apellido:"Chapas", edad:88}];
+
+				for(var i = 0; i < 3; i++){
+					document.getElementById("tbody2").innerHTML += "<tr><td>" + lista[i]["nombre"] + "</td><td>" + lista[i]["apellido"] + "</td><td>" + lista[i]["edad"] + "</td></tr>";
+				}
+				document.getElementById("tabla2").style.visibility = "visible";
+				document.getElementById("tabla").style.visibility = "hidden";
+				document.getElementById("tabla3").style.visibility = "hidden";
+			}
+
+			function funcion3(){
+				var lista = [];
+				var filas = parseInt(prompt("Escribe el número de filas (alumnos) que quieres" + 
+											 "\nque tenga el array: "));
+				//aqui añadimos al array la cantidad de alumnos que vamos a insertar
+				for(var i = 0; i < filas; i++){
+					lista[i] = [];
+				}
+				//aqui recorremos el array pediendo valores para cada posición
+				for(var i = 0; i < filas; i++){
+					var nombre = prompt("Indice 'nombre': ");
+					lista[i]["nombre"] = nombre;
+					var apellido = prompt("Indice 'apellido': ");
+					lista[i]["apellido"] = apellido;
+					var edad = prompt("Indice 'edad': ");
+					lista[i]["edad"] = parseInt(edad);
+
+					document.getElementById("tbody3").innerHTML += "<tr><td>" + lista[i]["nombre"] + "</td><td>" + lista[i]["apellido"] + "</td><td>" + lista[i]["edad"] + "</td></tr>";
+				}
+				document.getElementById("tabla3").style.visibility = "visible";
+				document.getElementById("tabla").style.visibility = "hidden";
+				document.getElementById("tabla2").style.visibility = "hidden";
+			}
+		</script>
+	</body>
+</html>

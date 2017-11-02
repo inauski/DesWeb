@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tarea15 - Arrays bidimensionales</title>
+		<style>
+			table{
+				position: absolute;
+   				left: 50%;
+   			 	top: 50%;
+   				transform: translate(-50%, -50%);
+   				-webkit-transform: translate(-50%, -50%);
+				width:200px;
+				visibility:hidden;
+			}
+			table, th, td {
+				border: 2px solid black;
+				border-collapse: collapse;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body style="text-align:center">
+		<h1>Manejando Array's</h1>
+		<button onclick="funcion1();">Púlsame para mostrar el array 'numeros'</button>
+		<button onclick="funcion2();">Púlsame para crear una tabla</button>
+		<button onclick="funcion3();">Púlsame para crear un matriz bidimensional</button>
+		<br><br><br>
+		<table id="tabla">
+			<tbody id="tbody">
+				<tr>
+					<th>Zona</th>
+					<th>Ventas</th>
+				</tr>	
+			</tbody>
+		</table>
+		<script>
+			function funcion1(){
+				var numeros = [[1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11, 12], [13]];
+				alert("Array numeros (alert) = " + numeros);
+				var cad = "";
+				for(var i = 0; i < numeros.length; i++){
+					for(var u = 0; u < numeros[i].length; u++){
+						cad += "---" + numeros[i][u];
+					}
+					cad += "\n";
+				}
+				alert("Array numeros (bucle for) = " + "\n" + cad);
+			}
+
+			function funcion2(){
+				var lista = [["Zona 1", "333.882€"], ["Zona 2", "217.771€"], 
+				["Zona 3", "190.597€"], ["Zona 4", "332.254€"], ["Zona 5", "178.135€"], 
+				["Zona 6", "116.550€"], ["Zona 7", "261.152€"], ["Zona 8", "269.797€"],
+				["Zona 9", "339.795€"], ["Zona 10", "300.075€"]];
+
+
+				for(var i = 0; i < lista.length; i++){
+					document.getElementById("tbody").innerHTML += "<tr><td>" + lista[i][0] + "</td><td>" + lista[i][1] + "</td></tr>";
+				}
+				document.getElementById("tabla").style.visibility = "visible";	
+			}
+			
+			function funcion3(){
+					var filas 	 = parseInt(prompt("Indica el número de filas que quieres que tenga el array --> "));
+					var columnas = parseInt(prompt("Indica el número de columnas que quieres que tenga el array --> "));
+					var lista = [];
+					//aqui añadimos al array otros arrays, para que no de error
+					for(var i = 0; i < filas; i++){
+						lista[i] = [];
+					}
+					//aqui recorremos el array pediendo valores para cada posición
+					for(var i = 0; i < filas; i++){
+						for(var u = 0; u < columnas; u++){
+								lista[i][u] = prompt("Escribe el contenido de la posición | " + i + " | " + u + " |");
+						}
+					}
+					alert("El array creado por ti = " + lista);
+			}
+		</script>
+	</body>
+</html>

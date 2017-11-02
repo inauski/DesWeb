@@ -1,2 +1,5 @@
 https://msdn.microsoft.com/es-es/library/ff679977(v=vs.94).aspx (indexOf)
 https://github.com/Theasker/daw_javascript/blob/master/DWEC02/tarea_dwec02.html
+
+http://librosweb.es/libro/javascript/capitulo_3/funciones_y_propiedades_basicas_de_javascript.html(FUNCIONES JAVASCRIPT)
+http://jquery-manual.blogspot.com.es/2013/11/como-incluir-un-array-como-parametro-en.html (ARRAY COMO PARAMETRO)

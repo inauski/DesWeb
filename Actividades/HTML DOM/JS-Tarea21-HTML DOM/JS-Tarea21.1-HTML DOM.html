@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS-TAREA22</title>	
+</head>
+<body>
+	<button type="button" onclick="myFunction(0)">Letra Grande</button>
+	<button type="button" onclick="myFunction(1)">Letra Pequeña</button>
+	<button type="button" onclick="restablecer()">Restablecer</button>
+	
+	<p>Maria</p>
+	<p>Ana</p>
+	<p>Sanz</p>
+
+	<script>
+		var p = document.getElementsByTagName("p");
+		function myFunction(x) {
+			for (var i = 0; i <= 2; i++) {
+				if (x == 0){
+					p[i].style.color = "red";
+					p[i].style.fontSize = "30px";
+				}
+				else{
+					p[i].style.color = "blue";
+					p[i].style.fontSize = "10px"
+			
+				}
+
+		}
+	}
+	function restablecer(){
+		document.location.href = document.location.href;
+	}
+	</script>
+</body>
+</html>

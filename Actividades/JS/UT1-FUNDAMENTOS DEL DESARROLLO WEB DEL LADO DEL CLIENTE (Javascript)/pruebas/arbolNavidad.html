@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Arbol navidad</title>
+</head>
+<body>
+<pre id="arbol">
+</pre>
+ 
+<script>
+// definimos la anchura máxima
+var max=20;
+// determina el numero de lineas mostradas
+j=1;
+// contiene el resultado a mostrar
+result="";
+ 
+for(i=1;i<=max;i+=2)
+{
+	result+="<br>"+(Array((1+(Math.ceil(max/2))-j)).join(" ")+Array(i+1).join("*"));
+	j=j+1;
+}
+ 
+//tronco
+if(max>=7)
+{
+	result+="<br>"+(Array((1+(Math.ceil(max/2))-2)).join(" ")+Array(4).join("*"));
+	result+="<br>"+(Array((1+(Math.ceil(max/2))-2)).join(" ")+Array(4).join("*"));
+}
+ 
+document.getElementById("arbol").innerHTML=result;
+</script>
+
+</body>
+</html>

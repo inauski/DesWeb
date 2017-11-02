@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSTarea16</title>
+</head>
+<body>
+
+<table id="tabla">
+      <tbody id="tbody">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Ciudad</th>
+        </tr>
+      </tbody>
+<script>
+
+
+
+var array = [{nombre: "Iñaki", apellido:"Santos", ciudad:"Pamplona"},
+             {nombre: "Ruben", apellido:"García", ciudad:"Pamplona"},
+             {nombre: "Ion",   apellido: "Sanz", ciudad:"Madrid"}];
+for (var i=0;i < 3; i++)
+  document.getElementById("tbody").innerHTML += "<tr><td> "+ array[i]["nombre"]+"</td><td>"+array[i]["apellido"] + "</td><td>"+ array[i]["ciudad"]+ "</td><tr>";
+
+
+
+</script>
+
+</body>
+</html>

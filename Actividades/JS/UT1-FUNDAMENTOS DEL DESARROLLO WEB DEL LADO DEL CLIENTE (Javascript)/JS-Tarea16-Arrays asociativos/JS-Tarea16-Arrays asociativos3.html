@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSTarea16</title>
+
+  <style>
+      table{
+          background-color: white
+          
+      }
+      table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align:center;
+        c
+      }
+    </style>
+</head>
+<body>
+
+<table>
+  <tbody id="tbody">
+  </tbody>
+</table>
+<script>
+//   nombres = new Array();
+//   telefono= new Array();
+//   var i
+//   for (i=0; i<=2; i++) {
+//     //Guardamos lo que escribe en el Array nombres
+//     nombres[i]= prompt("Introduce nombre " +(i+1));
+//     //Guardamos lo que escribe en el Array telefono
+//     telefono[i]= prompt("Introduce telefono " +(i+1)); 
+//   }
+//   document.write("<font color='white'>");
+//   document.write("<table border=1 bgcolor=blue>" +
+//    "<tr><th colspan=2>" + 
+//         "Lista de Nombres y Teléfonos" +
+//    "</th></tr>");
+  
+//   for (i=0; i<=2; i++) {
+//     //Escribimos en una celda el nombre de la posición i
+//     document.write("<tr><td>" + nombres[i] + "</td>");
+   
+//     //Escribimos en una celda el teléfono de la posición i
+//     document.write("<td>"+telefono[i] + "</td></tr>")
+//   }
+// document.write("</table></font>");
+
+
+    var asig = parseInt(prompt("Número de asignaturas: "));
+    var asignaturas = [];
+    for(var i = 0; i < asig; i++){
+      asignaturas.push(prompt("Escribe el nombre de la asignatura " + (i + 1) + ": "));
+    }
+
+    var alum = parseInt(prompt("Número de alumnos: "));
+    var alumnos = [];
+    for(var i = 0; i < alum; i++){
+      alumnos.push(prompt("Escribe el nombre del alumno " + (i + 1) + ": "));
+    }
+
+    var recoger = ""; //recoge los valores de la tabla (en este caso, notas)
+
+    recoger += "<tr><th></th>";
+    for(var i = 0; i < asignaturas.length; i++){
+      recoger += "<th>" + asignaturas[i] + "</th>";
+    }
+    recoger += "</tr><tr>";
+
+    for(var y = 0; y < alumnos.length; y++){
+      for(var x = 0; x < asignaturas.length + 1; x++){
+        if(x == 0){
+          recoger += "<th>" + alumnos[y] + "</th>";
+            }
+        else{
+          recoger += "<td>" + prompt("Escribe nota para el alumno " + alumnos[y] + " para la asignatura " + asignaturas[x - 1]) + "</td>";
+            }
+      }
+        recoger += "</tr>";
+    }
+        document.getElementById("tbody").innerHTML = recoger; 
+
+    
+
+</script>
+
+</body>
+</html>

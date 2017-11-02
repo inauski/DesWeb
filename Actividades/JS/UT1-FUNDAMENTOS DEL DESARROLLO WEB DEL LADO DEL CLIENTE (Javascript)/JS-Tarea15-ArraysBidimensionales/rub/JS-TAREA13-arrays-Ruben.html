@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays</title>
+</head>
+<body>
+	<div id="botonera"/>
+	<script>
+		var EJERCICIOS = 7;
+		for(i = 1; i <= EJERCICIOS; i++)
+			document.getElementById("botonera").innerHTML +=
+				"<button onClick='ejercicio" + i
+				+ "()'>Ejercicio " + i + "</button>"
+		function ejercicio1(){
+			nombres = [];
+			for(i = 0; i < 3; i++)
+				nombres[i] = prompt("Introduzca nombre (" + (i+1) + "): ");
+			alert(nombres);
+		}
+		function ejercicio2(){//Se supone que los números son enteros
+			numeros = [];
+			for(i = 0; i < 5; i++) {
+				n = parseInt(prompt("Introduzca entero (" + (i+1) + "): "));
+				while(isNaN(n))
+					n = parseInt(prompt("Introduzca entero (" + (i+1) + "): "));
+				numeros[i] = n;
+			}
+			cadena = "Multiplicamos por 5 los números introducidos:";
+			for(i = 0; i < numeros.length - 1; i++)
+				cadena += " " + numeros[i] + " * 5 = " + (numeros[i]*5) + ",";
+			cadena += " " + numeros[numeros.length-1] + " * 5 = "
+				+ (numeros[numeros.length-1]*5) + "."; 
+			alert(cadena);
+		}
+		function ejercicio3(){
+			vector = [];
+			do
+				n = parseInt(prompt("Introduzca dimensión del vector: "));
+			while(isNaN(n))
+			for(i = 0; i < n; i++){
+				x = parseInt(prompt("Introduzca entero (" + (i+1) + "): "));
+				while(isNaN(n))
+					x = parseInt(prompt("Introduzca entero (" + (i+1) + "): "));
+				vector[i] = x;
+			}
+			max = vector[0];
+			pos = 0;
+			for(i = 1; i < n; i++)
+				if (vector[i] > max){
+					max = vector[i];
+					pos = i;
+				}
+			alert("El mayor número(" + max + ") está en la posición "
+				+ (pos+1));
+
+		}
+		function ejercicio4(){
+			n = 6;
+			vectorA = [1,3,2,-4,6,5];
+			vectorB = [2,1,4,0,-6,2];
+			vectorC = [];
+			for(i = 0; i < n; i++)
+				vectorC[i] = vectorA[i] + vectorB[i];
+			alert("Vector A = " + vectorA
+			   +"\nVector B = " + vectorB
+			   +"\nSuma     = " + vectorC);
+		}
+		function ejercicio5(){
+			vector = ["patata","federico","eustaquio","sal"];
+			for(i = 0; i < vector.length; i++)
+				alert(vector[i] + " tiene " + vector[i].length + " caracteres");
+		}
+		function ejercicio6(){
+			function Cargar(tabla){
+				tabla[0] = 1000.32;
+				tabla[1] = 1254.27;
+				tabla[2] = 1541.31;
+				tabla[3] = 1269.23;
+				tabla[4] = 1422.20;
+			}
+			function CalcularGastos(tabla){
+				suma = 0;
+				for(i = 0; i < tabla.length; i++)
+					suma += tabla[i];
+				return suma;
+			}
+			sueldos = [];
+			Cargar(sueldos);
+			resultado = "SUELDOS:\n";
+			for(i = 0; i < sueldos.length; i++)
+				resultado += "\t" + sueldos[i] + "\n";
+			resultado += "Total gastos: " + CalcularGastos(sueldos);
+			alert(resultado);
+		}
+		function ejercicio7(){
+			alert("Concat = Concatena ".concat("varios ","arrays."));
+			numeros = [1,2,3,4,5,6,7,8,9,0]
+			alert("" + numeros.copyWithin(4,8))
+		}
+	</script>
+</body>
+</html>

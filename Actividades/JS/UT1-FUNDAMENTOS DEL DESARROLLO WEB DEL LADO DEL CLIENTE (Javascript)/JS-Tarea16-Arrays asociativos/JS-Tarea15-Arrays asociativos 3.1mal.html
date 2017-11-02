@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSTarea15</title>
+</head>
+<body>
+
+<p id="tabla"></p>
+
+
+<table id="tabla2">
+	<tbody id="tbody2">
+				<tr>
+					<th>Nombre</th>
+					<th>Asignatura</th>
+					<th>Nota</th>
+				</tr>
+	</tbody>
+</table>
+
+<script>
+
+
+function crearTabla(tabla){
+	string="<table>";
+	for(i=0;i<tabla.length;i++){
+		string +="<tr>";
+		for(j=0;j<tabla[i].length;j++){
+			string +="<td>"
+			string+=tabla[i][j];
+			string +="</td>"
+		}
+	string +="</tr>";
+}
+string +="</table>";
+return string;
+}
+
+ var tabla = [["Zona","Ventas"],
+ 			 ["Zona1","333.882"],
+ 			 ["Zona2","217.771"],
+ 			 ["Zona3","190.597"],
+ 			 ["Zona4","332.254"],
+ 			 ["Zona5","178.135"],
+ 			 ["Zona6","116.550"],
+ 			 ["Zona7","261.152"],
+ 			 ["Zona8","269.797"],
+ 			 ["Zona9","339.795"],
+ 			 ["Zona10","300.075"]];
+
+ document.getElementById("tabla").innerHTML = crearTabla(tabla); 
+</script>
+
+<script>
+	
+		var filas = parseInt(prompt("Ingrese cantidad de filas--> "));
+		var col = parseInt(prompt("Ingrese cantidad de columnas--> "));
+		var lista = [];
+		
+		//añadimos los alumnos a insertar			
+		for(var i = 0; i < filas; i++){
+			lista[i] = [];
+		}
+		
+		//recorremos el array para pedir los valores de cada posicion
+		for(var i = 0; i < filas; i++){
+			var nombre = prompt("Indice 'nombre': ");
+					lista[i]["nombre"] = nombre;
+			var asignatura = prompt("Indice 'asignatura': ");
+					lista[i]["asignatura"] = asignatura;
+			var nota = prompt("Indice 'nota': ");
+					lista[i]["nota"] = parseInt(nota);
+			
+		document.getElementById("tbody").innerHTML += "<tr><td>" + lista[i]["nombre"] + "</td><td>" + lista[i]["asignatura"] + "</td><td>" + lista[i]["nota"] + "</td></tr>";
+		}
+				
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSTarea16</title>
+</head>
+<body>
+
+<p id="tabla"></p>
+<p id="tabla2"></p>
+
+<script>
+
+
+function crearTabla(tabla){
+	string="<table>";
+	for(i=0;i<array.length;i++){
+		string +="<tr>";
+		for(j=0;j<array[i].length;j++){
+			string +="<td>"
+			string +=array[i][j];
+			string +="</td>"
+		}
+	string +="</tr>";
+}
+string +="</table>";
+return string;
+}
+
+ var array = [];
+ array["nombre"] = "Iñaki";
+ array["apellido"] = "Santos";
+ array ["ciudad"] = "Pamplona";
+ document.getElementById("tabla").innerHTML= "Nombre: "+array["nombre"]+ "<br>" + "Apellido: " + array["apellido"] + "<br>" + "Ciudad: " + array["ciudad"];
+
+
+</script>
+
+
+
+
+</body>
+</html>

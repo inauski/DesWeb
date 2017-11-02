@@ -1,0 +1,111 @@
+<html>
+
+<head>
+
+     <title>Anadir Filas Dinamicamente en HTML</title>
+
+     <script language="javascript">
+
+          function anadirFila(tableID) {
+
+               var table = document.getElementById(tableID);
+
+               var contFila = table.filas.length;
+
+               var fila = table.insertRow(contFila);
+
+ 
+
+               var cell1 = fila.insertCell(0);
+
+               var element1 = document.createElement("input");
+
+               element1.type = "checkbox";
+
+               cell1.appendChild(element1);
+
+ 
+
+               var cell2 = fila.insertCell(1);
+
+               var element2 = document.createElement("input");
+
+               element2.type = "text";
+               
+               cell2.appendChild(element2);
+
+          }
+
+ 
+
+          function borrarFila(tableID) {
+
+               try {
+
+               var table = document.getElementById(tableID);
+
+               var contFila = table.filas.length;
+
+ 
+
+               for(var i=0; i<contFila; i++) {
+
+                    var fila = table.filas[i];
+
+                    var chkbox = fila.cells[0].childNodes[0];
+
+                    if(null != chkbox && true == chkbox.checked) {
+
+                         table.borrarFila(i);
+
+                         contFila--;
+
+                         i--;
+
+                    }
+
+               }
+
+               }catch(e) {
+
+                    alert(e);
+
+               }
+
+          }
+
+ 
+
+     </script>
+
+</head>
+
+<body>
+
+ 
+
+     <input type="button" value="Anadir fila" onclick="anadirFila('datosTabla');" />
+
+ 
+
+     <input type="button" value="Borrar fila" onclick="borrarFila('datosTabla');" />
+
+ 
+
+     <table id="datosTabla" width="350px" border="1">
+
+          <tr>
+
+               <td><input type="checkbox" name="chk"/></td>
+
+               <td> <input type="text" /> </td>
+
+          </tr>
+
+     </table>
+
+ 
+
+</body>
+
+</html>

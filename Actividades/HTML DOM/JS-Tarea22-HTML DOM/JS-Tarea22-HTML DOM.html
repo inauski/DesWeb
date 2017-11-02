@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS-TAREA22</title>
+	
+	<style>
+	#t {border: 3px solid red}
+	#t1 {background-color: blue;}
+
+	#myDiv {
+	    background: yellow;
+	    border: 1px solid black;
+	    padding: 3px;
+	    width: 100px;
+	    margin-left: 1px;
+	    margin-top: 5px;
+
+	}
+	table {
+		margin-top: 5px;
+	}
+
+	
+	</style>
+
+	<script>
+
+	function arriba(){
+		document.getElementById("miImagen").src = "img/arriba.jpg";
+	}
+	function abajo(){
+		document.getElementById('miImagen').src = "img/abajo.jpg";
+	}
+
+
+	function velaOn(){
+		document.getElementById('velita').src = "img/velaOn.jpg";
+	}
+	function velaOff(){
+		document.getElementById('velita').src = "img/velaOff.jpg";
+	}
+	var cont=0
+	function pelotita(){
+		cont++;
+		if(cont==4)
+			alert("Pendejo, pinchaste mi pelotita");
+	}
+
+	function mOut(obj){
+		obj.src= "img/x.png";
+	}
+
+	function mOver(obj){
+		obj.src= "img/abajo.jpg";
+	}
+	function mEncima(obj){
+		obj.src= "img/velaOff.jpg";
+	}
+
+	function mensaje(){
+		alert("Una vela y una pelota pueden ser muy peligrosas, cuidado!!!")
+	}
+
+	function cambioColor(fondo){
+		document.bgColor = fondo;
+	}
+
+	function restablecer(){
+		document.location.href = document.location.href;
+	}
+
+	// Cambiar el contenido de t2
+	function modificarTexto() {
+  		var t2 = document.getElementById("t2");
+  		t2.firstChild.nodeValue = "Tres";    
+	}
+	// Añade un event listener a t
+	function cargar() { 
+  		var x = document.getElementById("t"); 
+  		x.addEventListener("click", modificarTexto, false); 
+	} 
+
+	document.addEventListener("DOMContentLoaded", cargar, false)
+
+	function changeColor(x)
+	{
+    	if(x.style.background=="rgb(247, 211, 88)")
+    	{
+        	x.style.background="#fff";
+    	}	
+    	else
+    	{
+        	x.style.background="#F7D358";
+    	}
+    	return false;
+	}
+
+	function bigImg(x) {
+	    x.style.height = "120px";
+	    x.style.width = "120px";
+	}
+
+	function normalImg(x) {
+	    x.style.height = "150px";
+	    x.style.width = "150px";
+	}
+
+	function coordenadas(e) {
+	    var x = e.clientX;
+	    var y = e.clientY;
+	    var coor = "Coordenadas: (" + x + "," + y + ")";
+	    document.getElementById("demo1").innerHTML = coor;
+	}
+
+	function limpiarCoord() {
+    	document.getElementById("demo1").innerHTML = "";
+	}
+
+
+	function clicD() {
+    	alert("Ha hecho clic derecho en el div!");
+	}
+
+	var con=0;
+	function fEnter(){
+		document.getElementById("demo2").innerHTML = con+=1;
+	}
+
+	var y=0;
+	function fSalirDiv(){
+		document.getElementById("demo3").innerHTML = y+=1;
+	}
+
+	function tamañoVentana(){
+		var ancho = window.outerWidth;
+		var alto = window.outerHeight;
+		var txt = "Tamaño ventana: Ancho=" + ancho + ", alto=" + alto;
+		document.getElementById("p4").innerHTML = txt;
+	}
+
+	window.addEventListener("resize",contTamano);
+	var x=0;
+	function contTamano(){
+		var txt = x +=1;
+		document.getElementById("demo4").innerHTML = txt;
+	}
+
+	
+
+
+</script>
+</head>
+<body onload="mensaje()" onresize="tamañoVentana()">
+
+	<img src="img/abajo.jpg" id="miImagen" onmousedown="arriba()" onmouseup="abajo()" onmouseover="mOver(this)" onmouseout="mOut(this)" onclick="pelotita()" width="100" height="180">
+	<img src="img/velaOff.jpg" id="velita" onmousedown="velaOn()" onmouseup="velaOff()" onmouseover="mEncima(this)" onmouseout="mOut(this)" width="100" height="180">
+
+	<!-- Al pasar el raton por encima -->
+	<img src ="img/real.jpg" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" width="120" height="150">
+
+	<form>
+	Pulsa:
+	<input type="button" value="Rojo" onclick="cambioColor('red')">
+	<input type="button" value="Azul" onclick="cambioColor('blue')">
+	<input type="button" value="Verde" onclick="cambioColor('green')">
+	<input type="button" value="Restablecer" onclick="restablecer()">
+	</form>
+
+	<table id="t" onclick="changeColor(this);"> 
+   		<tr>
+   			<td id="t1">Uno</td>
+   			<td id="t2">Dos</td>
+   		</tr>
+   		<tr>
+   			<td id="t3">Tres</td>
+   			<td id="t4" onclick="changeColor(this);">Cuatro</td>
+   		</tr>
+	</table>
+
+	
+
+	<div id="myDiv" onmousemove="coordenadas(event)" onmouseOut="limpiarCoord()" oncontextmenu="clicD()" onmouseenter="fEnter()" onmouseleave="fSalirDiv()">
+		<p><b>Observa!</b></p>
+		<p>Nº veces que <b>INGRESA</b> al div:<span id="demo2"></span></p>
+		<p>Nº veces que <b>SALE</b> del div:<span id="demo3"></span></p>
+		<button onclick="removeHandler()" id="btn1">Fijar numero aletorio</button>
+	</div>
+	<p id="demo1"></p>
+	<p>Numero aleatorio:<p id="p6"></p>
+	
+	<h3> Cambia el tamaño de la ventana para ver el ancho y alto</h3>
+	<p id="p4"></p>
+	<p>Nº veces que ha cambiado el tamaño de la ventana:<span id="demo4">0</span> </p>
+
+	<!-- 'p' para Ratoncito dentro, ratoncito fuera -->
+	<p id="p5"></p>
+
+
+
+
+
+
+</body>
+<script>
+	var x = document.getElementById("myDiv");
+		x.addEventListener("mouseover",fDentro);
+		x.addEventListener("click",fClic);
+		x.addEventListener("mouseout",fFuera);
+
+	function fDentro(){
+		document.getElementById("p5").innerHTML += "Ratoncito dentro -";
+	}
+	function fClic(){
+		document.getElementById("p5").innerHTML += "CLICK -";
+	}
+	function fFuera(){
+		document.getElementById("p5").innerHTML += "Ratoncito fuera -";
+	}
+	//Numero aleatorio
+	document.getElementById("myDiv").addEventListener("mousemove",fun);
+	function fun(){
+		document.getElementById("p6").innerHTML = Math.random();
+	}
+	function removeHandler(){
+		document.getElementById("myDiv").removeEventListener("mousemove",fun);
+	}
+</script>
+</html>
+
+
+
