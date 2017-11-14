@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS-TAREA24</title>
+	
+	<style></style>
+
+	<script>
+		
+		function comprobaciones() {
+		    var dot = document.getElementById("email").value.indexOf("@");
+		    var age = document.getElementById("age").value;
+		    var fname = document.getElementById("nombre").value;
+		    submitOK = "true";
+
+		    if (fname.length > 10) {
+		        alert("El nombre no puede contener mas de 10 caracteres");
+		        submitOK = "false";
+		    } 
+
+		    if (isNaN(age) || age < 1 || age > 100) {
+		        alert("La edad debe estar entre 1 y 100");
+		        submitOK = "false";
+		    }
+
+		    if (dot == -1) {
+		        alert("Email no valido!");
+		        submitOK = "false";
+		    }
+
+		    if (submitOK == "false") {
+		        return false;
+		    }
+		}
+		
+	</script>
+
+</head>
+<body>
+	
+
+	<form onsubmit="return comprobaciones()">
+	  Nombre (max 10 caracteres): <input type="text" id="nombre" size="20">
+	  <br>
+	  Edad (de 1 a 100): <input type="text" id="age" size="20">
+	  <br>
+	  E-mail: <input type="text" id="email" size="20">
+	  <br><br>
+  	  <input type="submit" value="Comprobar"> 
+	</form>
+	
+	
+
+	
+</body>
+
+</html>
+
+
+

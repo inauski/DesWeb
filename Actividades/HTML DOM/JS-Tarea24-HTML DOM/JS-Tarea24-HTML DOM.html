@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS-TAREA24</title>
+	
+	<style></style>
+
+	<script>
+		function validarConJs(){
+ 			valor = document.getElementById("txtrut1").value;
+ 			if( valor != "" ) {
+  				alert('Campo lleno');
+ 			}
+ 			else{
+   				alert('Campo vacío');
+ 			}
+		}
+
+		function validarReq(){
+			var inpObj = document.getElementById("id2");
+			if (inpObj.checkValidity() == false){
+				document.getElementById("p1").innerHTML = inpObj.validationMessage;
+			} else{
+				document.getElementById("p1").innerHTML = "Correcto"
+			}
+		}
+
+		function numeritos(){
+			var txt,x;
+
+			x = document.getElementById("numb").value;
+			if (isNaN(x)||x ==""){
+				txt = "El valor debe ser numerico";
+			}
+			else{
+				txt = "Correcto";
+			}
+			document.getElementById("p2").innerHTML = txt;
+		}
+		//Para valores por debajo
+		function fOverFlow(){
+			var txt="";
+			if (document.getElementById("id5").validity.rangeOverflow){
+				txt = "Valor demasiado grande";
+				alert("Prueba entre 1 y 100")
+			} 
+			else {
+				txt = "Valor correcto";
+			}
+			document.getElementById("p3").innerHTML = txt;
+		}
+		//Para valores por encima
+		function fUnderFlow(){
+			var txt="";
+			if (document.getElementById("id6").validity.rangeUnderflow){
+				txt = "Valor demasiado PEQUEÑO";
+				alert("Prueba con mayor que 100")
+			} 
+			else {
+				txt = "Valor correcto";
+			}
+			document.getElementById("p4").innerHTML = txt;
+		}
+
+		function agurBoton(){
+			document.getElementById("btn1").disabled = true;
+		}
+
+		function selectMultiple(){
+			document.getElementById("mySelect1").multiple = true;
+		}
+
+		function miLista() {
+		    var mylist = document.getElementById("miLis");
+		    document.getElementById("p5").value = mylist.options[mylist.selectedIndex].text;
+		}
+		/*
+		<!--Funciona ,solo con quitarle el comentario basta,y al form que utiliza esta funcion tambien claro -->
+		function comprobaciones() {
+		    var dot = document.getElementById("email").value.indexOf("@");
+		    var age = document.getElementById("age").value;
+		    var fname = document.getElementById("nombre").value;
+		    submitOK = "true";
+
+		    if (fname.length > 10) {
+		        alert("El nombre no puede contener mas de 10 caracteres");
+		        submitOK = "false";
+		    } 
+
+		    if (isNaN(age) || age < 1 || age > 100) {
+		        alert("La edad debe estar entre 1 y 100");
+		        submitOK = "false";
+		    }
+
+		    if (dot == -1) {
+		        alert("Email no valido!");
+		        submitOK = "false";
+		    }
+
+		    if (submitOK == "false") {
+		        return false;
+		    }
+		}  
+		
+		*/
+
+		//https://www.w3schools.com/js/js_validation_api.asp
+		//https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_rangeOverflow
+	</script>
+
+</head>
+<body>
+	<h2>Validacion de campo de texto</h2>
+
+	<!--Metodo 1 -->
+	<label>Validación con Javascript</label>
+	<br>
+	<input type="text" id="txtrut1" >
+	<button onclick="validarConJs();">validar</button>
+
+	<!--Metodo 2 (con Required)> -->
+		<form>
+			<br><label>Validacion con required</label><br>
+			<input type="text" id="id2" value="TextoPorDefecto" required >
+			<!--<input type="submit" name="" value="Validar">-->
+			<button onclick="validarReq()">Validar</button>
+			<p id="p1"></p>
+		<form>
+
+	<h2>Validacion con entrada numérica</h2>
+	
+		<input type="number" id="id3">
+		<input id="numb">
+		<button onclick="numeritos()">Comprobar</button>
+		<p id="p2"></p>
+
+	<h4>rangeOverflow y rangeUnderflow</h4>
+
+		<input id="id5" type="number" max="100">
+		<button onclick="fOverFlow()">Comprobar</button>
+		<p id="p3"></p>
+
+		<input id="id6" type="number" min="100">
+		<button onclick="fUnderFlow()">Comprobar</button>
+		<p id="p4"></p>
+
+	<h4>Otra pruebas</h4>
+
+	<!--
+	<form action="/action_page.php" onsubmit="return comprobaciones()">
+	  Nombre (max 10 caracteres): <input type="text" id="nombre" size="20">
+	  <br>
+	  Edad (de 1 a 100): <input type="text" id="age" size="20">
+	  <br>
+	  E-mail: <input type="text" id="email" size="20">
+	  <br><br>
+  	  <input type="submit" value="Comprobar"> 
+	</form>
+			-->
+	<p>Clica en deshabilitar para deshabilitar el happy</p>
+	<form>
+		<input type="button" id="btn1" value=":)">
+	</form>
+	<button onclick="agurBoton()">Deshabilitar</button>
+
+	<p> Antes de clicar en seleccion multiple solo podras elegir una fruta de la lista</p>
+	<form>
+		<select id="mySelect1" size="5">
+		  <option>Manzana</option>
+		  <option>Piña</option>
+		  <option>Banana</option>
+		  <option>Melón</option>
+		</select>
+		<input type="button" onclick="selectMultiple()" value="Seleccion multiple">
+	</form>
+
+	<br>
+
+	<form>
+		Selecciona el navegador favorito:
+			<select id="miLis" onchange="miLista()">
+			  <option></option>
+			  <option>Google Chrome</option>
+			  <option>Firefox</option>  
+			  <option>Internet Explorer</option>
+			  <option>Safari</option>
+			</select>
+<p>Tu navegador favorito: <input type="text" id="p5" size="20"></p>
+</form>
+
+
+
+	
+</body>
+
+</html>
+
+
+

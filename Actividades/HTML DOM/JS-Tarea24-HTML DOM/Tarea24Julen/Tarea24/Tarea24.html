@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function formulario1() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Debe rellenar el campo Apellido");
+        return false;
+    }
+}
+
+function formulario2() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x)||x=="") {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="action_page.php"
+onsubmit="return formulario1()" method="post">
+	Apellido: <input type="text" name="fname" >
+<br>
+<br>
+	Nombre: <input type="text" required>
+<input type="submit" value="Click">
+</form>
+<br>
+<br>
+<input type="Number" >
+<input  id="numb">
+<button type="button" onclick="formulario2()">CLICK2</button>
+
+<p id="demo"></p>
+
+
+</body>
+</html>

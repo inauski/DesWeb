@@ -1,0 +1,57 @@
+<html>
+<body>
+
+<H3>CheckValidity</h3>
+
+<input id="id1" type="number" min="10" max="20" required>
+<button onclick="funcion1()">OK</button>
+<p>Indroduce un numerto entre 10 y 20</p>
+<p id="demo"></p>
+<br>
+<br>
+<input id="id2" type="number" max="10">
+<button onclick="funcion2()">OK</button>
+<p>Indroduce un numerto mayor de  10</p>
+<p id="demo2"></p>
+<br>
+<br>
+<input id="id3" type="number" min="10">
+<button onclick="funcion3()">OK</button>
+<p>Indroduce un numerto menor de  10</p>
+<p id="demo3"></p>
+<br>
+<br>
+
+<script>
+function funcion1() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "Correcto!!";
+    } 
+} 
+
+function funcion2() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "No puede ser superior de 10";
+    } else {
+        txt = "Correcto";
+    } 
+    document.getElementById("demo2").innerHTML = txt;
+}
+
+function funcion3() {
+    var txt = "";
+    if (document.getElementById("id3").validity.rangeUnderflow) {
+        txt = "No puede ser menor de 10";
+    } else {
+        txt = "Correcto";
+    } 
+    document.getElementById("demo3").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
