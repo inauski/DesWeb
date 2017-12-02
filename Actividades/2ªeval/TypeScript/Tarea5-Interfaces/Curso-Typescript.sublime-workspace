@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"VA",
+				"value"
+			],
+			[
+				"my",
+				"mySelect"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"getElementBy",
+				"getElementById"
+			],
+			[
+				"fun",
+				"func1"
+			],
+			[
+				"te",
+				"texto2"
+			],
+			[
+				"id",
+				"id4"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"p",
+				"p2"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"func",
+				"funcionArriba"
+			],
+			[
+				"br",
+				"browser"
+			],
+			[
+				"b",
+				"browser"
+			],
+			[
+				"onc",
+				"onchange\tAttr"
+			],
+			[
+				"resu",
+				"resultado4"
+			],
+			[
+				"res",
+				"res1"
+			],
+			[
+				"D",
+				"document"
+			],
+			[
+				"R",
+				"resultado1"
+			],
+			[
+				"getElementBY",
+				"getElementsByTagName"
+			],
+			[
+				"tercer",
+				"tercerParr"
+			],
+			[
+				"ter",
+				"terrestre"
+			],
+			[
+				"getElement",
+				"getElementsByTagName"
+			],
+			[
+				"borr",
+				"borrarFila"
+			],
+			[
+				"fi",
+				"fillCell"
+			],
+			[
+				"a",
+				"array1"
+			],
+			[
+				"arr",
+				"array2"
+			],
+			[
+				"N",
+				"nombres"
+			],
+			[
+				"NO",
+				"nombre"
+			],
+			[
+				"c",
+				"ciudad"
+			],
+			[
+				"ARR",
+				"array"
+			],
+			[
+				"A",
+				"Apellido"
+			],
+			[
+				"NOM",
+				"nombres"
+			],
+			[
+				"crea",
+				"crearTabla"
+			],
+			[
+				"m",
+				"miArray"
+			],
+			[
+				"orde",
+				"ordenZA"
+			],
+			[
+				"mi",
+				"miTextArea"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"ta",
+				"tabla9"
+			],
+			[
+				"pro",
+				"prompt"
+			],
+			[
+				"s",
+				"Son"
+			],
+			[
+				"n",
+				"nCociente"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<title>Curso Typescript</title>\n</head>\n<body>\n\n\t<h1>Curso TypeScript</h1>\n\t<section id=\"container\"></section>\n</body>\n</html>",
+			"file": "index.html",
+			"file_size": 0,
+			"file_write_time": 131557363247602225,
+			"settings":
+			{
+				"buffer_size": 182,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<title>Curso Typescript</title>\n</head>\n<body>\n\n\t<h1>Curso TypeScript</h1>\n\t<section id=\"container\"></section>\n</body>\n</html>",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/ocho.html",
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/siete.html",
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/seis.html",
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/cinco.html",
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/cuatro.html",
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/tres.html",
+		"/F/Esc/DesWeb/Actividades/JS/ExamenIñakiSantos-Javascript/ExamenIñakiSantos-Javascript/uno.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea24-HTML DOM/Tarea24Julen/Tarea24/Tarea24.html",
+		"/C/Users/alumno/Desktop/Recursos/cinco.html",
+		"/C/Users/alumno/Desktop/Recursos/tres.html",
+		"/C/Users/alumno/Desktop/Recursos/ocho.html",
+		"/C/Users/alumno/Desktop/Recursos/dos.html",
+		"/C/Users/alumno/Desktop/Recursos/uno.html",
+		"/C/Users/alumno/Desktop/Recursos/seis.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea24-HTML DOM/JS-Tarea24-HTML DOM.html",
+		"/C/Users/alumno/Desktop/Recursos/siete.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea22-HTML DOM/pruebasOnFocus/onFocus2.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea22-HTML DOM/pruebasOnFocus/onFocus.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea24-HTML DOM/JS-Tarea24.2-HTML DOM.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18-2-Solución.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/Actividades/HTML DOM/JS-Tarea23-HTML DOM/JS-Tarea22-HTML DOM.html",
+		"/C/Users/alumno/Desktop/Recursos/cuatro.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea25-HTML DOM-EventListener/JS-Tarea25-HTML DOM-EventListener.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea23-HTML DOM/JS-Tarea22-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea27-HTML DOM/JS-Tarea27-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea26-HTML DOM/JS-Tarea26-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea25-HTML DOM/JS-Tarea25-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea24-HTML DOM/JS-Tarea24-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea23-HTML DOM/JS-Tarea23-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea24-HTML DOM/Tarea24Julen/Tarea24/Tarea24.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea24-HTML DOM/JS-Tarea24.2-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea22-HTML DOM/JS-Tarea22-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea21-HTML DOM/JS-Tarea21-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea20-HTML DOM/JS-Tarea20.1-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea22-HTML DOM/JS-Tarea22-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea21-HTML DOM/JS-Tarea21.1-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea21-HTML DOM/JS-Tarea21-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea20-HTML DOM/JS-Tarea20.4-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea19-HTML DOM/JS-Tarea19-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea20-HTML DOM/JS-Tarea20.3-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS19- HTML DOM/JS-Tarea19-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea20-HTML DOM/JS-Tarea20.2-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea19(onchange)-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea19(select)-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18.2-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18(dos botones)-HTML DOM.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea20-HTML DOM.html",
+		"/E/Esc/DesWeb/Actividades/pruebas/pruebas5.html",
+		"/E/Esc/DesWeb/Actividades/pruebas/pruebas4.html",
+		"/F/Esc/DesWeb/Actividades/HTML DOM/JS-Tarea18-HTML DOM/JS-Tarea18-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea16-HTML DOM/JS-Tarea16-HTML DOM.html",
+		"/F/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea15-HTML DOM/JS-Tarea15-HTML DOM.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea16-Arrays asociativos/dim/JSTarea16 - Dmytro Sych1.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea16-Arrays asociativos/JS-Tarea16-Arrays asociativos.html",
+		"/E/Esc/DesWeb/Actividades/pruebas/pruebas.html",
+		"/E/Esc/DesWeb/Actividades/pruebas/pruebas3.html",
+		"/E/Esc/DesWeb/Actividades/pruebas/pruebas2.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea16-Arrays asociativos/JSTarea16 - Dmytro Sych.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea16-Arrays asociativos/JS-Tarea16-Arrays asociativos3.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea16-Arrays asociativos/JS-Tarea15-Arrays-bidimensionales2.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea16-Arrays asociativos/JS-Tarea16-Arrays asociativos2.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea15-ArraysBidimensionales/JS-Tarea15-Arrays-bidimensionales2.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea15-ArraysBidimensionales/JSTarea15 - Dmytro Sych.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea14-Arrays(II)/JS-Tarea15/JS-Tarea15-Arrays-bidimensionales.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea14-Arrays(II)/JS-Tarea15/JS-Tarea15-Arrays-bidimensionales2.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea14-Arrays(II)/JS-Tarea15/JS-Tarea15.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea14-Arrays(II)/JS-Tarea14-Arrays(II)/JS-Tarea14-Arrays(II).html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea14-Arrays(II).zip",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea14-Arrays(II)/JS-Tarea14-Arrays(II).html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/JS-Tarea13-Arrays7.html",
+		"/E/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea13-ArraysII/JS-Tarea13-ArraysII.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/JS-Tarea13-Arrays6.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/ejemploArrayConParametros.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/JS-Tarea13-Arrays3.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/JS-Tarea13-Arrays5.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/JS-Tarea13-Arrays.html",
+		"/E/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea12-Arrays/JS-Tarea12-Arrays.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea13-Arrays/JS-Tarea13-Arrays2.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea5-Cajas emergentes/actividad5-IñakiSantos/ejer5.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea12-document.getElementById().value (II) y función eval/ejer12.html",
+		"/E/Esc/ACDA/Persistencia en BD/RecursosSQL/JS-Tarea11-document.getElementById.valueII/JS-Tarea11-document.getElementById.valueII.html",
+		"/E/Esc/DesWeb/Actividades/JS-Tarea11-document.getElementById.value/JS-Tarea11-document.getElementById.value/Tarea11(document.getElementByID.value).html",
+		"/E/Esc/DesWeb/Actividades/actividad11-IñakiSantos/ejer11(document.getElementByID.value).html",
+		"/E/Esc/DesWeb/Actividades/actividad8-IñakiSantos/actividad8-IñakiSantos/ejer8.html",
+		"/E/Esc/DesWeb/Actividades/actividad7-IñakiSantos/ejer7.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/act2.html",
+		"/E/Esc/DesWeb/Actividades/actividad5-IñakiSantos/actividad5-IñakiSantosss/JSTarea9.html",
+		"/E/Esc/DesWeb/Actividades/actividad5-IñakiSantos/actividad5-IñakiSantosss/JSTarea7.html",
+		"/E/Esc/DesWeb/Actividades/actividad5-IñakiSantos/ejer5.html",
+		"/E/Esc/DesWeb/Actividades/actividad6-IñakiSantos/ejer6.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/1.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/2.html",
+		"/C/Users/alumno/Desktop/DAM 2 Iñaki/DesWeb/funcion.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hola",
+			"Fila",
+			"fila",
+			"p",
+			"\">;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Curso-Typescript.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 146.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

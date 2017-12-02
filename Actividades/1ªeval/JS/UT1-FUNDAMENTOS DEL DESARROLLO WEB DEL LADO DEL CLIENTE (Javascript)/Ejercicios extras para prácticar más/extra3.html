@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSTarea16</title>
+  <link rel="stylesheet" type="text/css" href="/estilos.css">
+  <script type="text/javascript"></script>
+
+  <style>
+   
+    table { font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; font-size: 12px; margin: 45px; width: 550px;
+        text-align: center; border-collapse: collapse; border: 2px solid black;}
+     
+    th { font-size: 13px; font-weight: normal; 
+        padding: 8px; background: green; 
+        border-top: 4px ; border-bottom: 1px solid #fff; color: white;}
+     
+    td { padding: 8px; background: white; border-bottom: 1px solid #fff; color: black; border-top: 1px ;border-collapse: collapse; border: 2px solid black;}
+
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Eliminar fila de tabla HTML con Javascript</caption>
+    
+    <tr> 
+      <th>Persona</th> 
+      <th>Empresa</th> 
+      <th>URL</th>
+      <th>Accion</th> 
+    </tr>
+
+    <tr id="fila1"> 
+      <td>Steve Jobs</td> 
+      <td>Apple</td> 
+      <td>https://www.apple.com</td>
+      <td>
+        <input type="button" value="Eliminar" class="delete" onclick="borrar('1')">
+      </td>
+    </tr>
+
+    <tr id="fila2"> 
+      <td>Larry Page</td> 
+      <td>Google</td> 
+      <td>https://www.google.com</td>
+      <td>
+        <input type="button" value="Eliminar" class="delete" onclick="borrar('2')">
+      </td>
+    </tr>
+
+   <tr id="fila3"> 
+      <td>Peter Thiel</td> 
+      <td>Paypal</td> 
+      <td>https://www.paypal.com</td>
+      <td>
+        <input type="button" value="Eliminar" class="delete" onclick="borrar('3')">
+      </td>
+    </tr>
+
+   <tr id="fila4"> 
+      <td>Bill Gates</td> 
+      <td>Microsoft</td> 
+      <td>https://www.microsoft.com</td>
+      <td>
+        <input type="button" value="Eliminar" class="delete" onclick="borrar('4')">
+      </td>
+    </tr>
+
+  </table>
+
+<script type="text/javascript">
+ 
+  function borrar(no){
+    document.getElementById("fila"+no+"").outerHTML="";
+  }
+
+</script>
+</body>
+</html>
